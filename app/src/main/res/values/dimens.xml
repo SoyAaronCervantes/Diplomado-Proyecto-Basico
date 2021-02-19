@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightPlatziLogo">45dp</dimen>
+    <dimen name="toolbarHeight">45dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="marginScheduleContent">15dp</dimen>
+    <dimen name="imageViewHomeFragment">150dp</dimen>
+    <dimen name="spaceBetweenContentAndContainer">20dp</dimen>
+    <dimen name="spaceBetweenSpeakerContainer">5dp</dimen>
+    <dimen name="scheduleDetailMargin">10dp</dimen>
+    <dimen name="sizeTitle">20sp</dimen>
+    <dimen name="sizeSubtitle">15sp</dimen>
+    <dimen name="scheduleTitle">30sp</dimen>
+    <dimen name="scheduleSubtitle">20sp</dimen>
+    <dimen name="tagSize">12sp</dimen>
+</resources>

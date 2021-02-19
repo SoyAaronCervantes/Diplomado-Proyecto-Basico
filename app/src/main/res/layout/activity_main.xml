@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".view.ui.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <Toolbar
+          android:id="@+id/toolbarMain"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbarHeight"
+            android:contentDescription="@string/platziConf"
+            android:src="@drawable/logo_platzi_conf" />
+
+      </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+      <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/fragmentContent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@id/bottomNavigationMenu"
+          android:name="androidx.navigation.fragment.NavHostFragment"
+          app:defaultNavHost="true"
+          app:navGraph="@navigation/nav_graph" />
+
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/bottomNavigationMenu"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:menu="@menu/bottom_navigation_menu" />
+
+    </RelativeLayout>
+
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

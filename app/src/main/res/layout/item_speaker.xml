@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/spaceBetweenSpeakerContainer"
+      android:elevation="5dp"
+      app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/imageViewItemSpeakerImage"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/imageViewHomeFragment"
+          android:layout_margin="@dimen/marginScheduleContent"
+          android:contentDescription="@string/imageHomeFragment"
+          android:src="@mipmap/ic_launcher" />
+
+      <TextView
+          android:id="@+id/textViewItemSpeakerName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:text="Nombre del expositor"
+          android:textColor="@color/primary_900"
+          android:textSize="@dimen/sizeTitle"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textViewItemSpeakerJobTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:text="Trabajo del expositor"
+          android:textColor="@color/secondary_500"
+          android:textSize="@dimen/sizeSubtitle" />
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+</layout>

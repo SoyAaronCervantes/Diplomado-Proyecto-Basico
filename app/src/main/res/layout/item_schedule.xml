@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/marginScheduleContent"
+      android:baselineAligned="false"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginScheduleContent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textViewItemScheduleHour"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="end|bottom"
+          android:text="00:00"
+          android:textColor="@color/secondary_500"
+          android:textSize="@dimen/scheduleTitle"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textViewItemSchedulePeriod"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="end|top"
+          android:text="A.M."
+          android:textColor="@color/primary_700"
+          android:textSize="@dimen/scheduleSubtitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textViewItemScheduleConferenceName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:lines="1"
+          android:text="Nombre de la Conferencia"
+          android:textColor="@color/primary_700"
+          android:textSize="@dimen/scheduleSubtitle" />
+
+      <TextView
+          android:id="@+id/textViewItemScheduleConferenceSpeaker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:lines="1"
+          android:text="Speaker Name"
+          android:textColor="@color/primary_700"
+          android:textSize="@dimen/sizeSubtitle" />
+
+      <TextView
+          android:id="@+id/textViewItemScheduleTag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/shape_topic"
+          android:ellipsize="end"
+          android:lines="1"
+          android:text="Tag"
+          android:textColor="@color/white" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</layout>
